@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+.container {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate {
+  animation: loadRotate 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes loadRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
